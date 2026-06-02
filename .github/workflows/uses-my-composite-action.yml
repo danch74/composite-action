@@ -8,7 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: danch74/composite-action/my-composite-action/action.yml@main #⬅️ Change this 
+        uses: danch74/composite-action/my-composite-action@main #⬅️ Change this 
+              
         with:
           who-to-greet: Daniel #⬅️ Note
       - run: echo random-number "$RANDOM_NUMBER"
